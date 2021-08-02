@@ -3,6 +3,11 @@
   "displayName": "Innovia CoLabs Code Snippets",
   "description": "Innovia CoLabs code snippets",
   "version": "1.0.0",
+  "publisher": "Zach",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzach83/innovia-colabs-code-snippets"
+  },
   "engines": {
     "vscode": "^1.58.0"
   },
