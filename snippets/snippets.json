@@ -1,6 +1,6 @@
 {
   "Innovia Functional Component": {
-    "prefix": "ICFC",
+    "prefix": "IFC",
     "body": [
       "import React from \"react\"",
       "import {View, StyleProp, ViewStyle, StyleSheet, useWindowDimensions, Dimensions, Text } from \"react-native\"",
@@ -43,7 +43,7 @@
   },
 
   "Innovia Functional Component Web": {
-    "prefix": "ICFCW",
+    "prefix": "IFCW",
     "body": [
       "import React from \"react\"",
       "",
@@ -65,7 +65,7 @@
       "",
       "//RETURN",
       " return (",
-      "  <div style={styles.root}>",
+      "  <div>",
       "    <h1>Test</h1>",
       "  </div>",
       ")",
@@ -74,6 +74,42 @@
       "",
       "export default ${1:componentName}"
     ],
-    "description": "Innovia Functional Arrow Component"
+    "description": "Innovia Functional Component Web"
+  },
+
+  "Innovia Stylesheet": {
+    "prefix": "ISS",
+    "body": [
+      "const styles = StyleSheet.create({",
+      "    root: {",
+      "        flex: 1",
+      "    }",
+      "})",
+      ""
+    ],
+    "description": "Innovia Stylesheet"
+  },
+
+  "Innovia Screen": {
+    "prefix": "IScreen",
+    "body": [
+      "const styles = StyleSheet.create({",
+      "    root: {",
+      "        flex: 1",
+      "    }",
+      "})",
+      ""
+    ],
+    "description": "Innovia Stylesheet"
+  },
+
+  "Innovia Console Log": {
+    "prefix": "ICLG",
+    "body": [
+      "console.log(\"${1}\", ${1:function})",
+      "",
+      "const [${2:state}, set${2:state}] = React.useState($3)"
+    ],
+    "description": "Innovia Stylesheet"
   }
 }
