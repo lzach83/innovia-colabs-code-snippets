@@ -4,13 +4,19 @@ This is the README for your extension "innovia-colabs-code-snippets". After writ
 
 ## Features
 
-IFC - Functional Component Mobile
-IFCW - Functional Component Web
-ISS - Stylesheet
-ICLG - Console Log
-IUE - useEffect
-IUS - useState
-ICS - Component Structure
+## IFC - Functional Component Mobile
+
+## IFCW - Functional Component Web
+
+## ISS - Stylesheet
+
+## ICLG - Console Log
+
+## IUE - useEffect
+
+## IUS - useState
+
+## ICS - Component Structure
 
 ## Known Issues
 
