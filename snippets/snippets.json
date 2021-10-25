@@ -6,7 +6,6 @@
       "import {View, StyleProp, ViewStyle, StyleSheet, useWindowDimensions, Dimensions, Text } from \"react-native\"",
       "",
       "interface Props {",
-      "  styles?: StyleProp<ViewStyle>",
       "}",
       "",
       "const ${1:componentName}: React.FC<Props> = () => {",
@@ -90,26 +89,33 @@
     "description": "Innovia Stylesheet"
   },
 
-  "Innovia Screen": {
-    "prefix": "IScreen",
-    "body": [
-      "const styles = StyleSheet.create({",
-      "    root: {",
-      "        flex: 1",
-      "    }",
-      "})",
-      ""
-    ],
-    "description": "Innovia Stylesheet"
-  },
-
   "Innovia Console Log": {
     "prefix": "ICLG",
+    "body": ["console.log(\"${1}\", ${1:val})", ""],
+    "description": "Innovia Console Log"
+  },
+  "Innovia useEffect": {
+    "prefix": "IUE",
+    "body": ["React.useEffect(() => {", "${2}", "}, [${1}])"],
+    "description": "Innovia useEffect"
+  },
+  "Innovia useState": {
+    "prefix": "IUS",
     "body": [
-      "console.log(\"${1}\", ${1:function})",
-      "",
-      "const [${2:state}, set${2:state}] = React.useState($3)"
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = React.useState(${2})"
     ],
-    "description": "Innovia Stylesheet"
+    "description": "Innovia useState"
+  },
+  "Innovia component structure": {
+    "prefix": "ICS",
+    "body": [
+      "//GLOBAL STATE",
+      "//LOCAL STATE",
+      "//HOOKS",
+      "//FUNCTIONS",
+      "//LIFECYCLE",
+      "//RETURN"
+    ],
+    "description": "Innovia component structure"
   }
 }
